@@ -1,0 +1,294 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Container for the whole page */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Table Wrapper */
+  .table-wrapper {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow-x: auto; 
+  }
+  
+  /* Header */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    max-width: 150px; 
+    width: 100%;
+  }
+  
+  button.add {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  button.add-text {
+    margin-right: 10px;
+  }
+  
+  button.add-icon {
+    font-size: 18px;
+  }
+  
+  button.btn-save {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button.btn-cancel {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.btn-edit {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  button.btn-delete {
+    background-color: #f44336;
+    color: white;
+  }
+  .add-icon{
+    display: none;
+  }
+  /* Form input styles */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    max-width: 250px; 
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  /* Error message styles */
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Success message styles */
+  .success-message {
+    color: green;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #e0f7e0;
+    border: 1px solid green;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .highlight {
+    background-color: #e0f7e0;
+  }
+  
+ /* Responsive Design */
+
+/* For smaller screens (Tablets and below) */
+@media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    table {
+      font-size: 14px;
+      overflow-x: auto; 
+      width: 100%; 
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 12px; 
+    }
+  
+    input {
+      font-size: 14px;
+    }
+  
+    .table-wrapper {
+      padding: 10px;
+    }
+  
+    .add {
+      font-size: 18px;
+      padding: 8px 16px; 
+      width: auto; 
+    }
+  
+    .add-icon {
+      display: block;
+      font-size: 22px;
+    }
+  
+    .add-text {
+      display: none; 
+    }
+  
+    .success-message {
+      font-size: 13px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  }
+  
+  /* For mobile screens (Phones) */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    table {
+      font-size: 12px;
+      display: block; 
+      overflow-x: auto;
+      width: 100%;
+    }
+  
+    th, td {
+      padding: 8px;
+      white-space: nowrap; 
+    }
+  
+    button {
+      font-size: 10px;
+      padding: 6px 12px;
+    }
+  
+    input {
+      font-size: 12px;
+      padding: 8px;
+      width: 100%; 
+    }
+  
+    .add {
+      font-size: 16px;
+      padding: 8px 14px;
+      width: auto;
+    }
+  
+    .add-icon {
+      font-size: 24px;
+    }
+    .btn{
+      font-size: 10px; 
+      padding: 4px 8px; 
+      width: auto;
+      display: inline;/
+
+    }
+    .btn-save, .btn-cancel, .btn-edit, .btn-delete {
+      font-size: 12px; 
+    }
+  
+    .error,
+    .success-message {
+      font-size: 12px;
+    }
+  
+    .table-wrapper {
+      padding: 8px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  }
+  
+  /* General improvements for scaling */
+  @media (max-width: 360px) {
+    button.add {
+      font-size: 14px; 
+      padding: 6px 10px;
+      width: auto; 
+    }
+  
+    .add-icon {
+      font-size: 20px; 
+    }
+  
+    input, button {
+      font-size: 12px; 
+    }
+  
+    .table-wrapper {
+      padding: 6px;
+    }
+    .btn{
+      font-size: 10px; 
+      padding: 4px 8px; /* Adjust button padding for smaller screens */
+      width: auto; /* Allow buttons to adjust to content size */
+
+      display: inline;/* Adjust button padding for smaller screens */
+
+    }
+    .btn-save, .btn-cancel, .btn-edit, .btn-delete {
+      font-size: 12px; 
+    }
+  }
+  
